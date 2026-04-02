@@ -1,0 +1,22 @@
+/* Basic styling for the webpage */
+body {
+  /* Set line height to 1.5 times the font size
+     and use the OS’s UI font as the website font
+  */
+  font: 100%/1.5 system-ui;
+  margin: 20px; 
+}
+
+h1 {
+  color: #2c3e50; 
+}
+
+p {
+  color: #34495e; 
+}
+
+img {
+  display: block;
+  margin-top: 20px; 
+  border-radius: 10px; 
+}
