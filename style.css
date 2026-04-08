@@ -171,10 +171,4 @@ li {
   margin: 0;
 }
 
-.resume > p {
-  margin-top: 0;
-}
-
-.resume h1 {
-  font-size: 2.5em;   
-}
+.resume > p { margin-top: 0; } .resume h1 { font-size: 2.5em; }
