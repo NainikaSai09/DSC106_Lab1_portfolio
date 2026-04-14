@@ -1,4 +1,7 @@
 /* Basic styling for the webpage */
+html {
+  color-scheme: light dark;
+}
 
 :root {
   --color-accent: oklch(75.828% 0.08357 296.198);
@@ -20,7 +23,9 @@ body {
 nav {
   display: flex;
   margin-bottom: 1em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+
+  --border-color: oklch(50% 10% 200 / 40%);
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Style individual navigation links */
@@ -41,15 +46,15 @@ nav a.current {
 /* Add hover effects for navigation links */
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 h1 {
-  color: #2c3e50; 
+  color: canvastext; 
 }
 
 p {
-  color: #34495e; 
+  color: canvastext; 
 }
 
 img {
@@ -74,7 +79,7 @@ form {
 }
 
 label {
-  display: contents;
+  display: block;
 }
 
 input, textarea {
@@ -172,3 +177,19 @@ li {
 }
 
 .resume > p { margin-top: 0; } .resume h1 { font-size: 2.5em; }
+
+.color-scheme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  z-index: 100%
+}
+
+.color-scheme select {
+  font: inherit;
+}
+
+nav {
+  margin-top: 1rem;
+}
