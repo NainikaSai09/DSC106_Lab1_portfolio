@@ -1,0 +1,74 @@
+[
+  {
+    "title": "AI/ML Sentiment Analysis System",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a sentiment analysis system on hospital customer reviews using Python and Azure OpenAI to extract actionable insights from text data."
+  },
+  {
+    "title": "Semantic Search for FDA Documents",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed a semantic search tool for unstructured FDA regulatory documents using embeddings and FAISS for efficient retrieval."
+  },
+  {
+    "title": "Streamlit NLP Query Interface",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Designed an interactive Streamlit interface for document uploads and natural language querying, enabling real-time information access."
+  },
+  {
+    "title": "UI/UX Design for VR Application",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Collaborated with a UI/UX team to design user flows and interface prototypes for a virtual reality application using Figma."
+  },
+  {
+    "title": "Recipe Preparation Time Prediction",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built regression models to predict recipe preparation time from large-scale datasets, applying feature engineering and model evaluation techniques."
+  },
+  {
+    "title": "Box Office Revenue Prediction",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Predicted movie box office revenue using machine learning models with preprocessing pipelines and cross-validation."
+  },
+  {
+    "title": "Statistical Language Modeling",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Implemented unigram and n-gram language models and generated text using probabilistic sampling methods."
+  },
+  {
+    "title": "California AB 341 Waste Analysis",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Conducted time-series analysis on California waste disposal data to evaluate the impact of policy AB 341."
+  },
+  {
+    "title": "Taylor Swift Song Explorer",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Performed exploratory data analysis on song datasets and built a simple recommender system with visualization tools."
+  },
+  {
+    "title": "Friends TV Show Reboot Analysis",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed episode and character data to propose a data-driven reboot strategy using visualization and EDA techniques."
+  },
+  {
+    "title": "Image Processing & KNN Classifier",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Implemented image processing operations and built a KNN classifier for image recognition using object-oriented design."
+  },
+  {
+    "title": "Audio Processing Toolkit",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed reusable Python classes for audio wave manipulation and signal processing."
+  }
+]
