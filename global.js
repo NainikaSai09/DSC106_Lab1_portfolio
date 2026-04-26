@@ -160,10 +160,20 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const p = document.createElement('p');
     p.textContent = project.description;
 
-    // Append everything
+    // Year (NEW)
+    const year = document.createElement('p');
+    year.textContent = project.year;
+    year.classList.add('project-year');
+
+    // Wrap them together
+    const textContainer = document.createElement('div');
+    textContainer.appendChild(p);
+    textContainer.appendChild(year);
+
+    // Append
     article.appendChild(heading);
     article.appendChild(img);
-    article.appendChild(p);
+    article.appendChild(textContainer);
 
     containerElement.appendChild(article);
   }

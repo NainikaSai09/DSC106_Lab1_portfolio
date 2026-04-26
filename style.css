@@ -210,3 +210,84 @@ nav {
   grid-row: 2;
   margin: 0;
 }
+
+.project-year {
+  color: gray;
+  font-size: 1.3em;
+  font-family: "Georgia", serif;
+  font-variant-numeric: oldstyle-nums;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+
+/* Legend container */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  margin: 2em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  list-style: none;
+}
+
+/* Each legend item */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Color square */
+.swatch {
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background: var(--color);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+/* Container layout */
+.chart-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+/* Let legend take remaining space */
+.legend {
+  flex: 1;
+}
+
+
+/* Smooth animation */
+#projects-pie-plot path {
+  transition: 300ms;
+}
+
+/* Fade other slices when hovering one */
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+/* highlight selected */
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+/* apply to pie slices */
+#projects-pie-plot path.selected {
+  fill: var(--color);
+}
+
+/* pointer cursor */
+#projects-pie-plot path {
+  cursor: pointer;
+}
