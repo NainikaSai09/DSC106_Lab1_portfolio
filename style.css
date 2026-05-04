@@ -291,3 +291,104 @@ nav {
 #projects-pie-plot path {
   cursor: pointer;
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.5em 1em;
+  margin-top: 1em;
+}
+
+.stats dt {
+  font-weight: bold;
+}
+
+.stats dd {
+  margin: 0;
+}
+
+.gridlines line {
+  stroke: #ccc;
+  stroke-opacity: 0.2;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none; /* removes vertical axis line */
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3em 0.8em;
+}
+
+.info dt {
+  font-weight: normal;
+  opacity: 0.6;
+}
+
+.info dd {
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+
+  padding: 0.6em 0.9em;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  font-size: 0.85em;
+  line-height: 1.4;
+
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+dl.info {
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: currentColor;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
