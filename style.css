@@ -307,7 +307,7 @@ nav {
 
 .gridlines line {
   stroke: #ccc;
-  stroke-opacity: 0.4;
+  stroke-opacity: 0.6;
   shape-rendering: crispEdges;
 }
 
