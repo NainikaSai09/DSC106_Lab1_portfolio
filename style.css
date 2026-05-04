@@ -1,7 +1,5 @@
 /* Basic styling for the webpage */
-html {
-  color-scheme: light dark;
-}
+
 
 :root {
   --color-accent: oklch(75.828% 0.08357 296.198);
