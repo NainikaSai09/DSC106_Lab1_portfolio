@@ -139,7 +139,7 @@ function renderScatterPlot(data, commits) {
   yScale = d3
     .scaleLinear()
     .domain([0, 24])
-    .range([usableArea.top, usableArea.bottom]);
+    .range([usableArea.bottom, usableArea.top]);
 
   // NEW: radius scale
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
@@ -166,6 +166,7 @@ function renderScatterPlot(data, commits) {
 
   const yAxis = d3
     .axisLeft(yScale)
+    .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
     
 
   // Draw axes FIRST
