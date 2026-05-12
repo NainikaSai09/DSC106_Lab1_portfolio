@@ -18,6 +18,13 @@
     "description": "Designed an interactive Streamlit interface for document uploads and natural language querying, enabling real-time information access."
   },
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "../images/bikewatching.jpg",
+    "description": "Interactive Mapbox and D3 visualization of Bluebike traffic patterns in Boston and Cambridge.",
+    "url": "https://NainikaSai09.github.io/bikewatching/"
+  },
+  {
     "title": "UI/UX Design for VR Application",
     "year": "2024",
     "image": "https://dsc106.com/labs/lab02/images/empty.svg",

@@ -168,8 +168,19 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 
     // Wrap them together
     const textContainer = document.createElement('div');
+    const link = document.createElement('a');
+
+    if (project.url) {
+      link.href = project.url;
+      link.textContent = 'View Project';
+      link.target = '_blank';
+    }
     textContainer.appendChild(p);
     textContainer.appendChild(year);
+
+    if (project.url) {
+      textContainer.appendChild(link);
+    }
 
     // Append
     article.appendChild(heading);
