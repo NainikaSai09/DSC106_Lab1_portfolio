@@ -395,3 +395,44 @@ circle.selected {
   fill: #ff6b6b;
 }
 
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5em;
+}
+
+#files > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+#files dt {
+  grid-column: 1;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+#files small {
+  display: block;
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);;
+  border-radius: 50%;
+}

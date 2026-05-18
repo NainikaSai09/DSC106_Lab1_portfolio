@@ -16,20 +16,23 @@
   <p>This page incldues stats about the code of this website.</p>
 
   <div>
-  <label>
-    Show commits until:
+    <label>
+      Show commits until:
 
-    <input
-      type="range"
-      id="commit-progress"
-      min="0"
-      max="100"
-      value="100"
-    />
+      <input
+        type="range"
+        id="commit-progress"
+        min="0"
+        max="100"
+        value="100"
+      />
 
-    <time id="commit-time"></time>
-  </label>
+      <time id="commit-time"></time>
+    </label>
+  
 </div>
+
+<dl id="files"></dl> 
 
   <div id="stats"></div>
 
@@ -49,7 +52,7 @@
   <dd id="commit-date"></dd>
 
   <dt>Time</dt>
-  <dd id="commit-time"></dd>
+  <dd id="commit-tooltip-time"></dd>
 
   <dt>Author</dt>
   <dd id="commit-author"></dd>
